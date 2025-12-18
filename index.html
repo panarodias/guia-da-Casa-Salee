@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia da Casa Salée</title>
+    <!-- Tailwind CSS para o estilo Boho Chic -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display (Serif) e Montserrat (Sans) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Lucide Icons para ícones leves e modernos -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f9f7f2;
+            color: #44403c;
+        }
+        h1, h2, h3, h4, .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-glass {
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(28, 25, 23, 0.3), rgba(28, 25, 23, 0.5));
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .animate-spin-slow {
+            animation: spin 15s linear infinite;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="selection:bg-stone-200">
+
+    <!-- Seção de Abertura (Hero) -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Imagem de Capa (Pôr do Sol do Guia da Cidade) -->
+        <img src="image_c038e1.jpg" 
+             onerror="this.src='https://images.unsplash.com/photo-1590508115622-4a0b36873b2a?auto=format&fit=crop&q=80&w=2000'"
+             alt="[Pôr do sol em Armação dos Búzios]" 
+             class="absolute inset-0 w-full h-full object-cover scale-105">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative z-10 text-center px-6 max-w-5xl">
+            <span class="text-white/80 uppercase tracking-[0.4em] text-xs mb-4 block font-medium">Bem-vindo à nossa casa</span>
+            <h1 class="text-6xl md:text-8xl italic text-white mb-2 drop-shadow-sm font-light">Guia da Casa</h1>
+            <p class="text-xl md:text-2xl text-white/90 uppercase tracking-[0.3em] mb-8 font-light">Casa Salée</p>
+            <div class="space-y-4 border-t border-b border-white/20 py-10">
+                <p class="text-2xl md:text-3xl text-white/95 italic leading-relaxed max-w-3xl mx-auto">
+                    "Que a sua estadia seja leve, <br> quente e cheia de boas memórias."
+                </p>
+            </div>
+            <div class="mt-12">
+                <a href="#informacoes" class="bg-white/10 backdrop-blur-md text-white border border-white/30 px-10 py-4 rounded-full font-light tracking-widest hover:bg-white hover:text-stone-900 transition-all duration-500 uppercase text-xs">Informações Úteis</a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/60 animate-bounce">
+            <i data-lucide="chevron-down" class="w-8 h-8"></i>
+        </div>
+    </header>
+
+    <main id="informacoes" class="max-w-7xl mx-auto px-6 py-24 space-y-24">
+        
+        <!-- Grid de Conectividade & Tecnologia -->
+        <div class="grid md:grid-cols-2 gap-12">
+            
+            <!-- WiFi Section -->
+            <div class="bg-glass rounded-[3rem] border border-stone-200/50 p-10 shadow-sm hover:shadow-md transition-all">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-700">
+                        <i data-lucide="wifi" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-3xl italic text-stone-800">Conectividade</h3>
+                </div>
+                <div class="space-y-6 text-stone-600 leading-relaxed font-light">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest font-semibold text-stone-400 mb-1">Rede Principal</p>
+                            <p class="text-lg serif italic font-medium">Salee</p>
+                        </div>
+                        <div>
+                            <p class="text-[10px] uppercase tracking-widest font-semibold text-stone-400 mb-1">Rede Quartos</p>
+                            <p class="text-lg serif italic font-medium">Salee quartos</p>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-stone-100">
+                        <p class="text-[10px] uppercase tracking-widest font-semibold text-stone-400 mb-1">Senha WiFi Casa</p>
+                        <p class="text-xl font-mono text-amber-800 tracking-tight">Casa_salee78</p>
+                    </div>
+                    <div class="pt-4 border-t border-stone-100">
+                        <p class="text-[10px] uppercase tracking-widest font-semibold text-stone-400 mb-1">Área Comum (Clube)</p>
+                        <p class="text-lg serif italic font-medium">CLARO_5GB42d97</p>
+                        <p class="text-[10px] text-stone-400 mt-1 uppercase tracking-tighter">Senha: EFB42D97</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TV & Entretenimento -->
+            <div class="bg-glass rounded-[3rem] border border-stone-200/50 p-10 shadow-sm hover:shadow-md transition-all">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 bg-stone-100 rounded-full flex items-center justify-center text-stone-700">
+                        <i data-lucide="tv" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-3xl italic text-stone-800">Televisão</h3>
+                </div>
+                <p class="text-stone-600 font-light italic mb-6">A casa dispõe de dois controles remotos para sua conveniência:</p>
+                <div class="space-y-4">
+                    <div class="flex gap-4 items-start">
+                        <div class="w-1 bg-amber-200 h-12"></div>
+                        <p class="text-stone-600 text-sm leading-relaxed">Utilize o controle da própria <span class="font-semibold">TV</span> para ligar o aparelho e o controle da <span class="font-semibold">Claro TV</span> para navegar pelos canais.</p>
+                    </div>
+                    <div class="bg-stone-100/50 p-6 rounded-3xl border border-stone-200/50">
+                        <p class="text-xs uppercase tracking-widest font-semibold text-stone-500 mb-2 flex items-center gap-2">
+                            <i data-lucide="info" class="w-3 h-3"></i> Dica de Configuração
+                        </p>
+                        <p class="text-stone-700 text-sm leading-relaxed">
+                            Caso a TV não esteja configurada para exibir a Claro TV, selecione a entrada <span class="font-bold">HDMI 3</span> no controle da TV.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Grid de Serviços & Cuidados -->
+        <div class="grid md:grid-cols-2 gap-12">
+            
+            <!-- Deliveries Section -->
+            <div class="bg-glass rounded-[3rem] border border-stone-200/50 p-10 shadow-sm hover:shadow-md transition-all">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 bg-stone-100 rounded-full flex items-center justify-center text-stone-700">
+                        <i data-lucide="truck" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-3xl italic text-stone-800">Entregas</h3>
+                </div>
+                <p class="text-stone-600 font-light italic mb-8">Durante a sua estadia, se pedir entregas (farmácia, iFood...), deve-se comunicar a portaria com toda a comodidade.</p>
+                <div class="bg-amber-100/40 p-6 rounded-3xl border border-amber-200/50">
+                    <p class="text-xs uppercase tracking-widest font-semibold text-amber-800 mb-2">Comunicação Obrigatória</p>
+                    <p class="text-stone-700 text-sm leading-relaxed mb-4">Deve-se comunicar sempre a portaria sobre a chegada de entregadores.</p>
+                    <div class="flex items-center gap-3 text-amber-900 font-medium">
+                        <i data-lucide="phone" class="w-4 h-4"></i>
+                        <span>Portaria (WhatsApp): 55 22 99245-0340</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Manutenção & Compreensão -->
+            <div class="bg-glass rounded-[3rem] border border-stone-200/50 p-10 shadow-sm hover:shadow-md transition-all">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 bg-amber-50 rounded-full flex items-center justify-center text-amber-800">
+                        <i data-lucide="hammer" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-3xl italic text-stone-800">Cuidados</h3>
+                </div>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <i data-lucide="cloud-rain" class="w-6 h-6 text-stone-400 mt-1"></i>
+                        <p class="text-stone-600 text-sm leading-relaxed">Em dias de <span class="font-semibold">chuva</span>, pedimos a gentileza de recolher a rede para preservação do tecido.</p>
+                    </div>
+                    <div class="bg-stone-800 p-6 rounded-3xl text-white shadow-lg">
+                        <p class="text-[10px] uppercase tracking-widest font-semibold text-amber-400 mb-3">Manutenção & Piscina</p>
+                        <div class="space-y-4 text-stone-300 text-sm leading-relaxed italic">
+                            <p>
+                                A <span class="text-white font-medium">bomba da piscina</span> é ligada automaticamente todos os dias entre <span class="text-white font-medium">9h às 13h</span>.
+                            </p>
+                            <p>
+                                Eventualmente, será necessário que o <span class="text-white font-medium">piscineiro</span> e o <span class="text-white font-medium">jardineiro</span> façam seus trabalhos durante a hospedagem. Pedimos a compreensão.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Section: Acesso à Praia (Estrutura Vertical para Imagem Larga) -->
+        <section class="overflow-hidden bg-white rounded-[4rem] border border-stone-200 shadow-sm">
+            <div class="p-10 md:p-16 flex flex-col items-center text-center bg-stone-50/50">
+                <div class="mb-10 space-y-3">
+                    <i data-lucide="navigation" class="text-stone-300 w-8 h-8 mx-auto"></i>
+                    <h2 class="text-4xl italic text-stone-800">Caminho ao Mar</h2>
+                    <p class="text-stone-500 italic font-light">Informações de acesso</p>
+                </div>
+                <div class="max-w-4xl space-y-8">
+                    <p class="text-stone-600 font-light italic leading-relaxed text-lg">
+                        O nosso condomínio fica na rua da praia. No entanto, para <span class="font-bold">chegar</span> à areia, deve-se contornar o condomínio que fica de frente para o nosso (também de frente para a praia) seguindo os caminhos marcados na foto abaixo.
+                    </p>
+                    <div class="bg-amber-100/30 p-8 rounded-3xl border border-amber-200/50 italic inline-block mx-auto">
+                        <div class="flex items-center justify-center gap-3 mb-2 text-stone-800">
+                            <i data-lucide="car" class="w-5 h-5 text-amber-600"></i>
+                            <h4 class="font-medium uppercase text-xs tracking-widest">Maior Comodidade</h4>
+                        </div>
+                        <p class="text-stone-500 text-sm font-light leading-relaxed">
+                            Se preferir, pode dirigir cerca de <span class="font-bold text-stone-700">800m</span> e parar com facilidade em frente à <span class="font-bold text-stone-700">Praia de Manguinhos</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Imagem em toda a largura abaixo do texto -->
+            <div class="w-full">
+                <img src="ENTRADAS PRAIAS.jpg" 
+                     onerror="this.src='https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&q=80&w=1200'"
+                     alt="[Mapa de acesso à praia marcado com caminhos]" 
+                     class="w-full h-auto object-contain">
+            </div>
+        </section>
+
+        <!-- Trash & Ecology Section -->
+        <section class="relative overflow-hidden bg-stone-100 rounded-[4rem] border border-stone-200 shadow-sm">
+            <div class="grid md:grid-cols-2">
+                <div class="p-16 flex flex-col justify-center">
+                    <div class="mb-10 space-y-3">
+                        <i data-lucide="leaf" class="text-stone-300 w-8 h-8"></i>
+                        <h2 class="text-4xl italic text-stone-800">Gestão de Resíduos</h2>
+                        <p class="text-stone-500 italic font-light">Cuidando do nosso ambiente</p>
+                    </div>
+                    <div class="space-y-8">
+                        <div class="italic">
+                            <div class="flex items-center gap-3 mb-3">
+                                <i data-lucide="clock" class="text-amber-600 w-5 h-5"></i>
+                                <h4 class="text-2xl italic font-medium">Coleta Diária</h4>
+                            </div>
+                            <p class="text-stone-500 font-light italic leading-relaxed">
+                                O lixo é recolhido todos os dias por volta das <span class="font-bold text-stone-700">15h</span>. Pode deixá-lo junto ao relógio na rampa da garagem.
+                            </p>
+                        </div>
+                        <div class="bg-white/60 p-6 rounded-3xl border border-stone-200 italic">
+                            <div class="flex items-center gap-3 mb-2 text-stone-800">
+                                <i data-lucide="alert-triangle" class="w-5 h-5 text-amber-600"></i>
+                                <h4 class="font-medium uppercase text-xs tracking-widest">Atenção à nossa fauna</h4>
+                            </div>
+                            <p class="text-stone-500 text-sm font-light leading-relaxed">
+                                Após esse horário não é recomendado deixar o lixo lá, já que os animais silvestres podem revirá-lo. Ajude-nos a manter a harmonia com a natureza local.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="min-h-[500px]">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=1200'" 
+                         alt="[Detalhe da natureza ao redor da Casa Salée]" 
+                         class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- Address Section -->
+        <section class="text-center py-20 bg-stone-800 rounded-[4rem] text-white shadow-2xl relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10 pointer-events-none">
+                <i data-lucide="map" class="w-full h-full transform -rotate-12 scale-150"></i>
+            </div>
+            <div class="relative z-10 max-w-4xl mx-auto px-6 space-y-10">
+                <div class="w-16 h-16 bg-amber-500 rounded-full flex items-center justify-center text-stone-900 mx-auto">
+                    <i data-lucide="map-pin" class="w-8 h-8"></i>
+                </div>
+                <h2 class="text-5xl italic font-light">Nosso Endereço</h2>
+                <div class="space-y-4 font-light text-xl text-stone-200">
+                    <p class="serif italic">Avenida José Bento Ribeiro Dantas, 1818</p>
+                    <p class="uppercase tracking-[0.2em] text-sm">Condomínio Jardim do Lago • Casa B78</p>
+                    <p class="serif italic">Praia Rasa, Búzios</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Message -->
+        <section class="text-center py-10 italic">
+            <div class="max-w-2xl mx-auto space-y-8">
+                <i data-lucide="heart" class="mx-auto text-stone-200 w-8 h-8"></i>
+                <p class="text-stone-500 text-lg leading-relaxed font-light italic">
+                    Esperamos que cada detalhe desta casa lhe proporcione um descanso revigorante. Qualquer dúvida adicional, estamos à sua inteira disposição.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white border-t border-stone-100 py-20 text-center">
+        <div class="flex justify-center gap-10 mb-10 text-stone-300">
+             <i data-lucide="home" class="w-6 h-6"></i>
+             <i data-lucide="coffee" class="w-6 h-6"></i>
+             <i data-lucide="sun" class="w-6 h-6"></i>
+        </div>
+        <p class="text-stone-400 text-[10px] uppercase tracking-[0.5em] font-bold italic">Guia do Hóspede • Casa Salée</p>
+    </footer>
+
+    <script>
+        // Inicializa os ícones Lucide para que apareçam na página
+        lucide.createIcons();
+    </script>
+</body>
+</html>
